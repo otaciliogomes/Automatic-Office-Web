@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/oficio.css">
+    <title>Oficios</title>
+</head>
+<body background="imagens/officeSeven.jpg">
+    <nav>
+        <label class="logo"> Automatic Office</label>
+            <ul>
+                <li><a class="active" href="home1.html">Dashboard</a></li>
+                <li><a href="cadastro.html">Clientes</a></li>
+                <li><a href="oficios.html">Oficios</a></li>
+                <li><a href="loginSistema.html">Troca login</a></li>
+                <li><a href="#">Configurações</a></li>
+            </ul>
+    </nav>
+    <fieldset><legend>Dados do Caso</legend>
+    <p><label for="nome">Nome Completo:</label><input type="txt" class="dadPessoas" placeholder="Nome complero" required><label for="nome">ID Cliente:</label><input type="number" class="dadPessoas" required></p>
+    <p> <label for="cpf">Data de inicio do Processo</label><input type="date" class="dadPessoas" required></p>
+        <label for="caso" >Tipo de caso</label>
+        <select id="caso" >
+            <option value="Civil">Civil</option>
+            <option value="Trabalhista">Trabalhista</option>
+            <option value="Familia">Familia</option>
+            <option value="Penal">Penal</option>
+        </select>
+        <p><label for="desc"> Descrição do Caso</label></p> 
+        <p><textarea name="desc" id="desc" cols="50" rows="5" class="dadPessoas"></textarea></p>
+    </fieldset>
+
+    <button type="submit">Enviar</button>
+</body>
+</html>
