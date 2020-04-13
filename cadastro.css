@@ -13,6 +13,42 @@ body{
     font-family: "Conformataa", sans-serif
 }
 
+.pescad{
+    width:170px;
+    height: 60px;
+    border-radius: 80px 80px 80px 80px ;
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+.novocad{
+    width:170px;
+    height: 60px;
+    border-radius: 80px 80px 80px 80px ;
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+#onde-vai-mostrar form input{
+    display: block;
+    margin-top: 10px;
+}
+  
+#onde-vai-mostrar{
+    width: 1200px;
+    
+}
+
+#barra_de_pesquisa{
+    display: none;
+}
+
+#seuformulario{
+    display: none;
+ }
+
 fieldset{
     color:black;
     border:solid 6px rgb(27, 28, 29);
@@ -78,4 +114,12 @@ a.active,a:hover{
     margin-right: 40px;
     cursor: pointer;
     display: none;
+}
+.enviar{
+    width:100px;
+    height: 45px;
+    border-radius: 80px 80px 80px 80px ;
+    background-color: white;
+    color: black;
+    border-color: black;
 }
