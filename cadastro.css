@@ -9,21 +9,13 @@
 body{
     margin: 0;
     padding: 0;
-    background-size: 100%;
-    background-position: center;
+    background-size: cover;
     font-family: "Conformataa", sans-serif
-    
-}
-
-.pescad1{
-    top: 20%;
-    right: 80%;
 }
 
 .pescad{
     width:300px;
     height: 60px;
-    margin: 10px;
     border-radius: 80px 80px 80px 80px ;
     background-color: white;
     color: black;
@@ -33,7 +25,6 @@ body{
 .novocad{
     width:300px;
     height: 60px;
-    margin: 10px;
     border-radius: 80px 80px 80px 80px ;
     background-color: white;
     color: black;
