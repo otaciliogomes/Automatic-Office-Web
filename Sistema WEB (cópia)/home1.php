@@ -1,23 +1,41 @@
+<?php
+session_start();
+include('verifica_login.php');
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="home1.css">
+    <link rel="stylesheet" href="css/home1.css">
+    <script>
+        function mostrar(elemento){
+      var display = document.getElementById(elemento).style.display;
+        if(display == "none"){
+            document.getElementById(elemento).style.display = 'block';
+        }else{
+            document.getElementById(elemento).style.display = 'none';
+        }    
+    }
+    </script>
+
 </head>
-<body background="office.jpg">
+<body background="imagens/office.jpg">
     <nav>
         <label class="logo"> Automatic Office</label>
             <ul>
-                <li><a class="active" href="home1.html">Dashboard</a></li>
-                <li><a href="cadastro.html">Clientes</a></li>
-                <li><a href="oficios.html">Oficios</a></li>
-                <li><a href="loginSistema.html">Troca login</a></li>
-                <li><a href="#">Configurações</a></li>
+                <li><a class="active" href="home1.php">Dashboard</a></li>
+                <li><a href="cadastro.php">Clientes</a></li>
+                <li><a href="oficios.php">Oficios</a></li>
+                <li><a href="logout.php">Troca login</a></li>
+                <li><a href="logout.php">Sair</a></li>
             </ul>
     </nav>
     <div class="txt">
+        <p class="txttitulo"> Historia do COR</p>
+    </br>
         <p>
             O Centro Oscar Romero de Defesa dos Direitos Humanos (COR), ora denominado como Associação sem fins lucrativos, foi fundado e constituído em 19 de junho de 1998, com sede na capital de São Paulo, na Rua Bertioga, Bairro Chácara Inglesa, próximo à estação Praça da Árvore do Metrô.
 
@@ -26,6 +44,9 @@
             A Associação atua na prestação de serviço de apoio à assistência jurídica integral e gratuita à população hipossuficiente dos Foros Regionais de Jabaquara e Santo Amaro, nas áreas de Família, Cível, Infância e Juventude não infracional e Juizado Especial Cível, sendo que a Defensoria Pública remete à Associação COR, 210 encaminhamentos por mês divididos nas áreas acima mencionadas.
 
         </p>
+    </div>
+    <div class="txt2">
+        <div class="pescad1"><button class="pescad" onclick="mostrar('barra_de_pesquisa')">Notificações</button></div>
     </div>
 </body>
 </html>

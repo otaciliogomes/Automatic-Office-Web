@@ -58,17 +58,51 @@ a.active,a:hover{
     display: none;
 }
 
+.txttitulo{
+    font-size: 20px;
+    text-align: justify;
+    top: 10px;
+    
+}
+
 .txt{
-    width: 400px;
-    height: 500px;
+    margin: 20px;
+    width: 600px;
+    height: 450px;
     border:2px solid #000;
     border-radius: 80px 0px 80px 0px;
     color: white;
     background-color: rgba(0,5,0, 0.88);
-    top: 55%;
+    top: 25%;
     left: 50%;
     position: absolute;
-    transform: translate(-50% , -50%);
     box-sizing: border-box;
     padding: 70px 28px ;
+}
+
+.txt2{
+    text-align: center;
+    width:300px;
+    height: 0px;
+    margin: 10px;
+    border:2px solid #000;  
+    border-radius: 80px 80px 80px 80px;
+    color: white;
+    background-color: rgba(0,5,0, 0.88);
+    top: 20%;
+    right: 75%;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 50px 28px ;
+}
+
+.pescad{
+    width:300px;
+    height: 60px;
+    margin: 10px;
+    right: 75%;
+    border-radius: 80px 80px 80px 80px ;
+    background-color: white;
+    color: black;
+    border-color: black;
 }
